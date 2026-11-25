@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shieldwork Maintenance LLC | Property Preservation &amp; Maintenance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef2f4; --surface:#ffffff; --ink:#14232b; --muted:#4a5c66; --line:#c9d3d9;
+  --deep:#17323d; --on-deep:#eef2f4; --accent:#e0a526; --on-accent:#14232b;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1a20; --surface:#16252d; --ink:#e8eef1; --muted:#9db0ba; --line:#2b3f49;
+    --deep:#0a1217; --on-deep:#e8eef1; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1a20; --surface:#16252d; --ink:#e8eef1; --muted:#9db0ba; --line:#2b3f49;
+  --deep:#0a1217; --on-deep:#e8eef1; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:Archivo,"Helvetica Neue",Arial,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 0;gap:1rem;flex-wrap:wrap}
+.brand{font:800 1.2rem Archivo,sans-serif;text-decoration:none;display:flex;align-items:center;gap:.6rem}
+.brand svg{width:26px;height:30px;flex:none}
+nav a{margin-left:1.4rem;text-decoration:none;font-weight:600;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{background:var(--deep);color:var(--on-deep)}
+.hero .wrap{padding-top:4.5rem;padding-bottom:4.5rem}
+.hero h1{font-size:clamp(2.4rem,7vw,4.6rem);font-weight:800;max-width:14ch;letter-spacing:-.02em}
+.hero p{max-width:52ch;font-size:1.2rem;margin:1.4rem 0 2rem;color:#c5d3da}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);font:700 1rem Archivo,sans-serif;padding:.9rem 1.5rem;border-radius:4px;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--on-deep);border:2px solid #5d7683;margin-left:.6rem}
+section{padding:4rem 0}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:.6rem}
+.lead{color:var(--muted);max-width:56ch;margin:0 0 2.2rem}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;border-top:3px solid var(--ink)}
+.svc{padding:1.3rem 0;border-bottom:1px solid var(--line)}
+.svc h3{font-size:1.2rem;margin-bottom:.3rem}
+.svc p{margin:0;color:var(--muted)}
+.band{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;counter-reset:s}
+.steps li{counter-increment:s;border-left:4px solid var(--accent);padding-left:1rem}
+.steps li::before{content:"Step " counter(s);display:block;font:700 .85rem Archivo,sans-serif;color:var(--muted);margin-bottom:.2rem}
+.steps h3{font-size:1.1rem;margin-bottom:.3rem}
+.steps p{margin:0;color:var(--muted);font-size:1rem}
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.who h3{font-size:1.15rem;margin-bottom:.3rem}
+.who p{margin:0;color:var(--muted)}
+.contact{background:var(--deep);color:var(--on-deep)}
+.contact .lead{color:#c5d3da}
+.contact dl{display:grid;grid-template-columns:max-content 1fr;gap:.5rem 1.5rem;margin:0 0 2rem}
+.contact dt{font-weight:600;color:#9db6c2}
+.contact dd{margin:0}
+footer{padding:1.5rem 0;color:var(--muted);font-size:.95rem}
+@media (max-width:760px){
+  .services,.who{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  nav a{margin:0 1rem 0 0}
+  .btn.ghost{margin:.6rem 0 0}
+}
+@media (max-width:460px){.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="#top" id="top" style="color:var(--on-deep)">
+        <svg viewBox="0 0 26 30" aria-hidden="true"><path d="M13 1 2 5v9c0 7 4.6 12.2 11 15 6.4-2.8 11-8 11-15V5z" fill="#e0a526"/><path d="M8 15l4 4 6-8" fill="none" stroke="#14232b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Shieldwork Maintenance
+      </a>
+      <nav aria-label="Main">
+        <a href="#services" style="color:#c5d3da">Services</a>
+        <a href="#process" style="color:#c5d3da">How it works</a>
+        <a href="#contact" style="color:#c5d3da">Contact</a>
+      </nav>
+    </header>
+    <div style="padding-top:3rem">
+      <h1>Your property, looked after.</h1>
+      <p>Shieldwork Maintenance LLC protects and maintains residential and rental properties, from routine upkeep and repairs to inspections and full property preservation.</p>
+      <a class="btn" href="#contact">Request a quote</a>
+      <a class="btn ghost" href="#services">See our services</a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section id="services">
+    <div class="wrap">
+      <h2>What we do</h2>
+      <p class="lead">One team for the work a property needs, whether it is occupied, rented, or sitting vacant.</p>
+      <div class="services">
+        <div class="svc"><h3>Property preservation</h3><p>Securing, winterizing, debris removal, and keeping vacant properties in compliant condition.</p></div>
+        <div class="svc"><h3>Property maintenance</h3><p>Scheduled upkeep for buildings and grounds so small issues don’t become expensive ones.</p></div>
+        <div class="svc"><h3>Rental property support</h3><p>Turnovers, make-ready work, and tenant request handling for landlords and investors.</p></div>
+        <div class="svc"><h3>Property management</h3><p>Day-to-day oversight, vendor coordination, and clear updates for owners.</p></div>
+        <div class="svc"><h3>Cleaning</h3><p>Move-in and move-out cleans, post-repair cleanup, and recurring service.</p></div>
+        <div class="svc"><h3>Repairs</h3><p>General repairs to interiors and exteriors, completed and documented.</p></div>
+        <div class="svc"><h3>Inspections</h3><p>Condition checks with photo reports for owners, lenders, and rental turnovers.</p></div>
+        <div class="svc"><h3>Related real estate services</h3><p>Ask us about anything else your property needs. If we can’t do it, we’ll say so.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="process">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <p class="lead">A simple process, with a written record at every stage.</p>
+      <ol class="steps">
+        <li><h3>Tell us what you need</h3><p>Send the address and a short description of the job.</p></li>
+        <li><h3>We inspect</h3><p>We check the property and document its condition.</p></li>
+        <li><h3>You approve a quote</h3><p>Clear scope, clear price, agreed before work starts.</p></li>
+        <li><h3>We finish and report</h3><p>Work completed, with photos and a summary sent to you.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Who we work with</h2>
+      <p class="lead">Owners and managers who want the property handled without constant follow-up.</p>
+      <div class="who">
+        <div><h3>Landlords and investors</h3><p>Reliable turnover and repair support for rental portfolios.</p></div>
+        <div><h3>Homeowners</h3><p>Maintenance and repairs for homes you own, live in, or are away from.</p></div>
+        <div><h3>Banks and asset managers</h3><p>Inspection and preservation work for vacant or distressed properties.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Request a quote</h2>
+      <p class="lead">Send the property address and what you need done. We’ll reply with next steps.</p>
+      <dl>
+        <dt>Email</dt><dd><a href="mailto:info@shieldworkmaintenance.com">info@shieldworkmaintenance.com</a></dd>
+        <dt>Phone</dt><dd><a href="tel:+10000000000">(000) 000-0000</a></dd>
+        <dt>Service area</dt><dd>Add your city or state here</dd>
+      </dl>
+      <a class="btn" href="mailto:info@shieldworkmaintenance.com?subject=Quote%20request">Email us</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y">2026</span> Shieldwork Maintenance LLC. All rights reserved.</div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
